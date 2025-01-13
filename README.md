@@ -8,6 +8,8 @@ Sign in with Solana is a process for authenticating your Solana public key. The 
     - Note: to avoid contention and overloading this proposal, the exact specification ChainID that is adopted by the ecosystem is not in scope for this SIMD. We merely include it’s existence and data type as an optional field
 - Process for signing the message and communication to the user.
 
+This repo contains methods for creating and verifying messages
+
 ## **Motivation**
 
 Creating accounts have historically been a friction point for new users often with a tradeoff of simplicity and security. It also is an error surface for users when choosing between an easy to remember password and the complexity of unique and secure passwords. This has given rise to methods like single sign on. This puts a lot of power into that provider that can control your account, information and because users are sticky, apps have a lot of UX lock-in that is now dictated by the SSO provider.
@@ -164,5 +166,7 @@ The goal is to make it easy for apps and wallets to authenticate with Solana add
 ## **TODO:**  
 
 Add sign-in input generation (front end)
+* include the actual signing logic  
+<br>
 
 Add sign-in out put verification (backend)
