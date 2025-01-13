@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "sign-in-with-solana"
+version = "0.1.0"
+description = "Sign in with Solana implementation that alllows apps and users authenticae with kepairs and prove ownership of their Solana addresses"
+authors = ["Matt Sorg <sorg.matthew@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+solders = "*"
+base58 = "*"
+dataclasses = "*"
+typing = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
